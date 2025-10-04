@@ -1,22 +1,35 @@
 # dog-exercise-react
->>>>>>> origin/main
-=======
+
 # React + Vite - Dog Exercise Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Dog Grid
 
-Currently, two official plugins are available:
+A simple React app showcasing a 3x3 grid of dog images with captions, utilizing React components, props, and mapping.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+•⁠  ⁠Displays a 4x4 grid of dog images with captions
+•⁠  ⁠Utilizes React components for modularity and reusability
+•⁠  ⁠Demonstrates the use of props and mapping in React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the ESLint configuration
+•⁠  ⁠React
+•⁠  ⁠JavaScript (ES6+)
+•⁠  ⁠CSS (for basic styling)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# dog-exercise-react
->>>>>>> origin/main
+## Getting Started
+
+1.⁠ ⁠Clone the repository: ⁠ git clone https://github.com/your-username/react-dog-grid.git ⁠
+2.⁠ ⁠Install dependencies: ⁠ npm install ⁠
+3.⁠ ⁠Start the app: ⁠ npm start ⁠
+
+
+
+## License
+
+MIT License
+
+## Author
+
+[Jenifer Nirmal Raj](https://github.com/jenidevops)
