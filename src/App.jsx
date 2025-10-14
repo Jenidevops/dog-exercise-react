@@ -20,32 +20,41 @@ const dogData = [
 
 function DogGrid({ dogs }) {
   return (
-    <div
-      className="w-full max-w-screen-lg grid gap-1 justify-items-center"
-      style={{
-        gridTemplateRows: 'repeat(2, 1fr)',
-        gridTemplateColumns: 'repeat(4, 1fr)',
-      }}
-    >
-      {dogs.map((dog, index) => (
-        <div key={index} className="flex flex-col items-center">
-          <img
-            src={dog.image}
-            alt={dog.caption}
-            className="object-cover"
-            style={{ width: '150px', height: '150px', objectPosition: 'center center' }}
-          />
-          <p className="text-center mt-2">{dog.caption}</p>
+    <div className="container mx-auto max-w-5xl px-4">
+      <div className="bg-white border-2 border-gray-300 p-8">
+        <div className="grid grid-cols-2 min-[800px]:grid-cols-4 gap-4 min-[800px]:gap-6">
+          {dogs.map((dog, index) => (
+            <div 
+              key={index} 
+              className="border-2 border-gray-400 p-3 min-[800px]:p-4 bg-white flex flex-col items-center w-full max-w-[180px] mx-auto"
+            >
+              <div className="w-full aspect-square mb-3 min-[800px]:mb-4 border border-gray-300">
+                <img
+                  src={dog.image}
+                  alt={dog.caption}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <p className="text-center text-xs min-[800px]:text-sm font-medium text-gray-800 leading-tight">
+                {dog.caption}
+              </p>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 }
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <DogGrid dogs={dogData} />
+    <div className="min-h-screen bg-gray-100 py-8">
+      <div className="container mx-auto px-4">
+        <h1 className="text-2xl md:text-3xl font-bold text-center text-black mb-8">
+          Dog Gallery - React Components & Props Exercise
+        </h1>
+        <DogGrid dogs={dogData} />
+      </div>
     </div>
   );
 }
